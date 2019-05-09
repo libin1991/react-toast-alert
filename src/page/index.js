@@ -10,17 +10,17 @@ import logo from './img/logo.svg';
 
 export default class App extends Component {
 	toast() {
-		$.toast({
-			type:0,
-			content: "我是默认Toast",
-			time: 1000,
-			opacity: .5,
-			onSucc() {
-				console.log("我是Toast的回调！")
-			}
-		});
+//		$.toast({
+//			type:0,
+//			content: "我是默认Toast",
+//			time: 1000,
+//			opacity: .5,
+//			onSucc() {
+//				console.log("我是Toast的回调！")
+//			}
+//		});
 		
-		// $.toast("我是默认Toast");
+		$.toast("我是默认Toast");
 	}
 	 
 	dialog() {

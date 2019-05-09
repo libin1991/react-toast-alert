@@ -20,7 +20,7 @@ export default class Global {
 			setting={...setting,...option}
 		}
 		
-		this.show(0,setting);
+		this.show(setting);
 		
 		if(setting.type!==3){   //loading需要手动关闭
 			setTimeout(() => {
@@ -50,11 +50,11 @@ export default class Global {
 		 
 		 setting={...setting,...option};
 		 
-		 this.show(1,setting);
+		 this.show(setting);
 	}
    
 	
-	static show(n,setting) {
+	static show(setting) {
 		
 		var div = document.createElement('div');
 		var id = document.createAttribute("id");
