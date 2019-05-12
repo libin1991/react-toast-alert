@@ -2,13 +2,10 @@ import React from "react";
 import './dialog.less'
 
 export default class Toast extends React.Component {
-	constructor(props) {
-		super(props);
-	}
  
 	render() {
 		let {
-			type,content,opacity,title,btnSucc,btnFail,onClose,onSucc,onFail
+			content,opacity,title,btnSucc,btnFail,onClose,onSucc,onFail
 		} = this.props.setting;
 
 		let style = {

@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React,{Component} from 'react';
 
 import  './css/App.less';
 
 import $ from '@/component/Toast/index';
 import $1 from '@/component/Dialog/index'; 
+import Heart from '@/component/heart/index';
 
 import logo from './img/logo.svg';
-
+import img4 from '@/assets/img/4.jpg';
 
 export default class App extends Component {
 	toast() {
@@ -70,7 +71,7 @@ export default class App extends Component {
 			<div>
 		        <div className="App">
 		            <div className="App-header">
-		                <img src={logo} className="App-logo2"/>
+		                <img alt={`img`} src={logo} className="App-logo2"/>
 		            </div>
 		            
 		            <div>
@@ -82,6 +83,10 @@ export default class App extends Component {
 		            <div>
 		                <button onClick={this.loading}>点击弹出loading</button>
 		            </div>
+		            
+		            <Heart></Heart>
+		            
+		            <img alt={`img`} src={img4} className="App-logo2"/>
 		        </div>
 		    </div>
 		);
