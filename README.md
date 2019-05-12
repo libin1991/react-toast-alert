@@ -191,7 +191,8 @@ const addCustomize = () => config => {
                 viewportUnit: 'vw', // (String) Expected units.
                 selectorBlackList: ['.ignore', '.hairlines'], // (Array) The selectors to ignore and leave as px.
                 minPixelValue: 1, // (Number) Set the minimum pixel value to replace.
-                mediaQuery: false // (Boolean) Allow px to be converted in media queries.
+                mediaQuery: false , // (Boolean) Allow px to be converted in media queries.
+                exclude:/heart/gi    //过滤文件夹
             }),
             require('postcss-write-svg')({
                 utf8: false
