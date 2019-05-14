@@ -1,7 +1,7 @@
 const { override, fixBabelImports, addLessLoader } = require('customize-cra');
 const rewireLess = require('react-app-rewire-less');
 var path = require('path');
-const excludeFiles = require('postcss-exclude-files').default;
+
 const addCustomize = () => config => {
   config.resolve={
     alias: {   //模块别名定义，方便后续直接引用别名，无须多写长长的地址
